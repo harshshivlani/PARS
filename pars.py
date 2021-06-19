@@ -32,17 +32,23 @@ def get_table_download_link(df):
 def data_collater(df):
     data = pd.DataFrame([df.iloc[8,2], df.iloc[8,7], df.iloc[10,2], df.iloc[10,7],  df.iloc[12,2].date(), df.iloc[12,7], 
                      df.iloc[14,2], df.iloc[14,7],
-                     df.iloc[23,9], df.iloc[23,10], df.iloc[31,9], df.iloc[31,10], df.iloc[39,9], df.iloc[39,10], df.iloc[47,9], df.iloc[47,10],
+                     df.iloc[23,2], df.iloc[23,9], df.iloc[23,10], #KRA1
+                     df.iloc[31,2], df.iloc[31,9], df.iloc[31,10], #KRA2
+                     df.iloc[39,2], df.iloc[39,9], df.iloc[39,10], #KRA3
+                     df.iloc[47,2], df.iloc[47,9], df.iloc[47,10], #KRA4
                      df.iloc[54,11], df.iloc[85,5], df.iloc[95,1]],
              index=['Name', 'Surname', 'Employee Code', 'Designation', 'Joining Date', 'Department',
                     'Primary Supervisor', 'Secondary Supervisor',
-                    'Employee KRA 1', 'Supervisor KRA 1','Employee KRA 2', 'Supervisor KRA 2','Employee KRA 3', 'Supervisor KRA 3','Employee KRA 4', 'Supervisor KRA 4',
+                    'KRA 1', 'Employee KRA 1', 'Supervisor KRA 1',
+                    'KRA 2','Employee KRA 2', 'Supervisor KRA 2',
+                    'KRA 3','Employee KRA 3', 'Supervisor KRA 3',
+                    'KRA 4', 'Employee KRA 4', 'Supervisor KRA 4',
                     "Supervisor's Final Rating", "Supervisor's General Comments", "Supervisor's Recommendation"])
     return data
 
 
 st.write("""
-    # FG PARS Data Collator
+    # FG PARS Data Collater
     """)
     
 
@@ -57,7 +63,10 @@ if len(file_count)>0:
 	st.write(str(len(file_count)) +" files uploaded sucessfully.")
 	df = pd.DataFrame(index=['Name', 'Surname', 'Employee Code', 'Designation', 'Joining Date', 'Department',
                     'Primary Supervisor', 'Secondary Supervisor',
-                    'Employee KRA 1', 'Supervisor KRA 1','Employee KRA 2', 'Supervisor KRA 2','Employee KRA 3', 'Supervisor KRA 3','Employee KRA 4', 'Supervisor KRA 4',
+                    'KRA 1', 'Employee KRA 1', 'Supervisor KRA 1',
+                    'KRA 2','Employee KRA 2', 'Supervisor KRA 2',
+                    'KRA 3','Employee KRA 3', 'Supervisor KRA 3',
+                    'KRA 4', 'Employee KRA 4', 'Supervisor KRA 4',
                     "Supervisor's Final Rating", "Supervisor's General Comments", "Supervisor's Recommendation"])
 	df.index.name='Summary'
 
