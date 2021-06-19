@@ -46,10 +46,14 @@ def data_collater(df):
                     "Supervisor's Final Rating", "Supervisor's General Comments", "Supervisor's Recommendation"])
     return data
 
-
-st.write("""
+col1, mid, col2 = st.beta_columns([1,1,20])
+with col1:
+    st.image('Logo.jpg', width=80)
+with col2:
+    st.write("""
     # FG PARS Data Collator
     """)
+
     
 
 multiple_files = st.file_uploader(
