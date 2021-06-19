@@ -48,7 +48,7 @@ def data_collater(df):
 
 col1, mid, col2 = st.beta_columns([1,1,20])
 with col1:
-    st.image('Logo.jpg', width=80)
+    st.image('logo.jpg', width=80)
 with col2:
     st.write("""
     # FG PARS Data Collator
