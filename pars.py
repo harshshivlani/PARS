@@ -46,12 +46,12 @@ def data_collater(df):
                     "Supervisor's Final Rating", "Supervisor's General Comments", "Supervisor's Recommendation"])
     return data
 
-col1, mid, col2 = st.beta_columns([1,1,20])
+col1, mid, col2 = st.beta_columns([1,12,20])
 with col1:
-    st.image('logo.jpg', width=80)
+    st.image('logo.jpg', width=250)
 with col2:
     st.write("""
-    # FG PARS Data Collator
+    # PARS Data Collator
     """)
 
     
