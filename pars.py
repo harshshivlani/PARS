@@ -30,7 +30,7 @@ def get_table_download_link(df):
 
 
 def data_collater(df):
-    data = pd.DataFrame([df.iloc[8,2], df.iloc[8,7], df.iloc[10,2], df.iloc[10,7],  df.iloc[12,2].date(), df.iloc[12,7], 
+    data = pd.DataFrame([df.iloc[8,2], df.iloc[8,7], df.iloc[10,2], df.iloc[10,7],  df.iloc[12,2], df.iloc[12,7], 
                      df.iloc[14,2], df.iloc[14,7],
                      df.iloc[23,2], df.iloc[23,9], df.iloc[23,10], #KRA1
                      df.iloc[31,2], df.iloc[31,9], df.iloc[31,10], #KRA2
