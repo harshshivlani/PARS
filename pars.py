@@ -48,7 +48,7 @@ def data_collater(df):
 
 
 st.write("""
-    # FG PARS Data Collater
+    # FG PARS Data Collator
     """)
     
 
